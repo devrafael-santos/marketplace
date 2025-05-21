@@ -1,0 +1,40 @@
+.body {
+  height: 100vh;
+  background-color: #0d141c;
+
+  color: #FFF;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  width: 50%;
+  height: 50%;
+
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #131c25;
+}
+
+.error-face h1 {
+  font-size: 8rem;
+  margin-bottom: 10px;
+}
+
+.error-face h3 {
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 40px;
+
+  color: #e66352;
+}
+
+h2 {
+  font-size: 2rem;
+}

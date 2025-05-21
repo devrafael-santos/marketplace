@@ -1,0 +1,51 @@
+<section class="main-login">
+  <div class="login-form">
+    <div class="login-header">
+      <h1>Marketplace</h1>
+      <h2>Welcome Back</h2>
+    </div>
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div class="input-box">
+        <label for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          formControlName="email"
+          placeholder="Enter your email"
+        />
+        @if(emailIsInvalid) {
+        <p class="control-error">
+          Please enter a valid and unique email address.
+        </p>
+        }
+      </div>
+
+      <div class="input-box">
+        <label for="password">Password</label>
+        <input
+          id="password"
+          type="password"
+          formControlName="password"
+          placeholder="Enter your password"
+        />
+        @if(passwordIsInvalid) {
+        <p class="control-error">
+          Please enter a valid password.
+        </p>
+        }
+      </div>
+
+      <div class="remember-forgot">
+        <label><input type="checkbox" formControlName="remember" /> Remember me</label>
+        <a href="#">Forgot password?</a>
+      </div>
+
+      <button class="button">Log In</button>
+
+      <footer class="register-link">
+        <p>Don't have an account? <a href="">Sing up</a></p>
+      </footer>
+    </form>
+  </div>
+</section>

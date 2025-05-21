@@ -1,0 +1,19 @@
+<div class="product-div">
+  <div class="img">
+    @if (!product().img) {
+      <div class="default-text-img">product image</div>
+    } @else {
+      <img [src]="product().img" alt="product" />
+    }
+  </div>
+
+  <div class="product-main">
+    <div class="product-info">
+      <p class="product-title">
+        {{product().name}}
+      </p>
+      <p class="price">{{product().price | currency}}</p>
+    </div>
+    <button type="button" (click)="onAddToCart()">Add to Cart</button>
+  </div>
+</div>
